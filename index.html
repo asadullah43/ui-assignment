@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>IT-Solutions</title>
   </head>
@@ -14,6 +19,7 @@
           <img src="images/ezgif-2-f1151d9a205e.png" alt="logo is here" />
         </div>
         <div class="menu">
+          <a href="#" class="fa fa-times"></a>
           <a href="#">Home</a>
           <a href="#">Services</a>
           <a href="#">About</a>
@@ -21,6 +27,7 @@
           <a href="#">Blog</a>
           <a href="#">Contact</a>
         </div>
+        <a href="#" class="fa fa-bars"></a>
         <div class="button-with-nav">
           <button>Get Free Quote</button>
         </div>
@@ -56,7 +63,8 @@
       </div>
       <div class="services-container">
         <div class="col-1">
-          <div class="circle-1"><img src="images/services1.svg" alt="" /></div>
+          <div class="circle-with-pic"><div class="circle-1"><img src="images/services1.svg" alt="" /></div></div>
+          
 
           <h1>Managed IT services</h1>
           <p>
@@ -65,7 +73,8 @@
           </p>
         </div>
         <div class="col-2">
-          <div class="circle-2"><img src="images/services2.svg" alt="" /></div>
+          <div class="circle-with-pic"> <div class="circle-2"><img src="images/services2.svg" alt="" /></div></div>
+         
 
           <h1>Backup and recovery</h1>
           <p>
@@ -74,7 +83,8 @@
           </p>
         </div>
         <div class="col-3">
-          <div class="circle-3"><img src="images/services3.svg" alt="" /></div>
+          <div class="circle-with-pic"> <div class="circle-3"><img src="images/services3.svg" alt="" /></div></div>
+         
 
           <h1>Cyber Security</h1>
           <p>
@@ -236,7 +246,13 @@
       <div>
         <div class="hero-image-sec-7">
           <div class="hero-text-sec-7">
-            <p>Innovative IT Solution for your <br> Business & Startup</p>
+            <a href="#"
+              ><img src="images/free-youtube-icon-141-thumb.png" alt="" />
+            </a>
+            <p>
+              Innovative IT Solution for your <br />
+              Business & Startup
+            </p>
             <button>Get Started Now</button>
           </div>
         </div>
@@ -246,13 +262,16 @@
     <section class="footer">
       <div class="footer-row">
         <div>
-          <img src="images/ezgif-2-f1151d9a205e (1).png" alt="" />
+          <div class="footer-logo">
+            <img src="images/ezgif-2-f1151d9a205e.png" alt="" />
+          </div>
+
           <p>
             Duis aute irure dolor inasfa reprehenderit in <br />
             voluptate velit esse cillum
           </p>
-          <p>10 (87) 738-3940</p>
-          <a href="">contact@it-kol.com</a>
+          <h1 id="contact-num">10 (87) 738-3940</h1>
+          <div id="email-f"><a href="#">contact@it-kol.com</a></div>
         </div>
 
         <div class="f-nav">
@@ -263,7 +282,7 @@
           <a href="">Blog</a>
           <a href="">Contact</a>
         </div>
-        <div>
+        <div class="se">
           <h2>Services</h2>
           <a href="">Drone Mapping</a>
           <a href="">Real State</a>
@@ -276,8 +295,16 @@
             Subscribe our newsletter to get updates <br />
             about our services and offers.
           </p>
-          <input type="email" name="email" placeholder="Email Address" />
-          <div class="social-icons"></div>
+          
+          <div class="email-input"><input type="email" name="email" placeholder="Email Address" />
+            
+
+          <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
         </div>
       </div>
       <div class="copy-r">
