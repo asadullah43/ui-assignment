@@ -267,13 +267,16 @@ padding-left: 60px;
   padding-top: 60px;
   font-weight: bold;
 }
+
 .sec-4-link a{
   color: white;
   font-weight: bold;
 }
+
 .sec-5-cont-1{
   text-align: center;
   padding-top: 60px;
+  
   
 }
 .sec-5-cont-1 h1{
@@ -284,6 +287,7 @@ padding-left: 60px;
 padding-top: 20px;
 line-height: 1.6;
 padding-bottom: 50px;
+
 }
 .sec-5-cont-1 button{
   
@@ -512,17 +516,107 @@ nav .fa{
  
 }
 @media screen and (max-width:956px){
-  .menu{
-   display: block;
-
+  .menu a{
+   display: block; 
+   float: left;
   }
-.menu a{
-  position: absolute;
-  background-color: red;
-  height: 50vh;
-  width: 200px;
-  right:  0;
-  text-align: left;
-  z-index: 2;
+
+
 }
+@media screen and (max-width:770px){
+  header {
+    background-color: #09204a;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px; 
+  }
+  .button-with-nav{
+    
+      padding-right: 200px;
+      padding-bottom: 10px;
+    
+  }
+  .left-side{
+    text-align: center;
+  }
+  .left-side h1{
+    font-size: 30px;
+  }
+.service-top h1{
+  font-size: 20px;
+}
+.circle-with-pic{
+  padding-left: 55px;
+}
+.col-1, .col-2, .col-3{
+  padding-top: 50px;
+}
+.b-business h1{
+  padding-top: 20px;
+  font-size: 20px;
+}
+.content-1, .content-2{
+  flex-direction: column;
+}
+.content-1 img,.content-2 img{
+
+  width: 100px;
+  padding-left: 20px;
+}
+.sec-b-btn {
+  padding-left: 30px;
+}
+.sec-4-cont-1-left {
+  padding-right: 150px;
+}
+.sec-4-cont-1-left  p{
+  font-size: 15px;
+}
+.sec-4-cont-1-left  h1{
+  font-size: 20px;
+}
+.sec-4-cont-1-right p{
+  font-size: 15px;
+}
+.sec-5-cont-1 h1{
+  font-size: 20px;
+}
+.sec-5-cont-1 p{
+  font-size: 15px;
+}
+.sec-5-cont-2{
+  flex-direction: column;
+}
+.sec-5-cont-2 h1{
+font-size: 40px;
+}
+.sec-6-heading h1{
+  font-size: 30px;
+}
+.hero-text-sec-7 p{
+  font-size: 20px;
+}
+.hero-text-sec-7 img{
+  
+    width: 120px;
+
+}
+.hero-text-sec-7 button{
+  height: 50px;
+  width: 160px;
+}
+.footer-row{
+  flex-direction: column;
+  
+}
+.f-nav{
+  padding-top: 40px;
+}
+.se{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 }
