@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 header {
   background-color: #09204a;
@@ -21,7 +20,6 @@ nav {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .menu a {
   text-decoration: none;
   color: white;
@@ -42,11 +40,11 @@ nav {
   display: flex;
   flex-wrap: wrap;
 }
-
 .left-side {
   padding-top: 80px;
   float: left;
   color: #f6f9fc;
+  width: 450px;
 }
 .left-side h1 {
   font-weight: bold;
@@ -68,14 +66,19 @@ nav {
 }
 .right-side img {
   position: absolute;
-
   right: 100px;
   width: 1000px;
 }
-
 .service-top {
+  display: flex;
   padding-top: 80px;
-  text-align: center;
+  justify-content: center;
+}
+.service-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
 }
 .service-top p {
   color: #ff67a6;
@@ -85,15 +88,25 @@ nav {
   font-size: 40px;
   font-weight: bold;
   padding-top: 20px;
+  text-align: center;
 }
 .services-container {
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
-  align-items: center;
-  text-align: center;
   flex-wrap: wrap;
-  padding: 80px 80px 120px 140px;
   line-height: 1.6;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.content-below-circle {
+  width: 350px;
+}
+.col-1,
+.col-2,
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .col-1 h1,
 .col-2 h1,
@@ -102,24 +115,22 @@ nav {
   font-size: 20px;
   padding-top: 40px;
   padding-bottom: 20px;
+  text-align: center;
 }
-.circle-with-pic {
-  padding-left: 130px;
+.col-1 p,
+.col-2 p,
+.col-3 p {
+  text-align: center;
 }
-.circle-1,
-.circle-2,
-.circle-3 {
+.circle {
   width: 100px;
   height: 100px;
-  text-align: center;
   border-radius: 50px;
   background-color: white;
   box-shadow: 1px 2px 5px black;
 }
-.circle-1 img,
-.circle-2 img,
-.circle-3 img {
-  padding-top: 15px;
+.circle img {
+  padding: 20px;
 }
 .section-grow-business {
   background-color: #f6f9fc;
@@ -164,6 +175,7 @@ nav {
 }
 .b-right-side-content {
   padding: 30px;
+  width: 410px;
 }
 .b-right-side-contenth1 {
   padding-bottom: 20px;
@@ -195,6 +207,9 @@ nav {
   color: white;
   padding-top: 50px;
 }
+.sec-4-cont-1-left{
+  width: 450px;
+}
 .sec-4-cont-1-left p {
   font-weight: bold;
   color: #ff4492;
@@ -202,6 +217,9 @@ nav {
 }
 .sec-4-cont-1-left h1 {
   font-size: 40px;
+}
+.sec-4-cont-1-right{
+  width: 500px;
 }
 .sec-4-cont-1-right p {
   padding-top: 20px;
@@ -251,7 +269,9 @@ nav {
   font-weight: bold;
 }
 .sec-5-cont-1 {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 60px;
 }
 .sec-5-cont-1 h1 {
@@ -259,6 +279,8 @@ nav {
   font-size: 50px;
 }
 .sec-5-cont-1 p {
+  text-align: center;
+  width: 600px;
   padding-top: 20px;
   line-height: 1.6;
   padding-bottom: 50px;
@@ -286,6 +308,7 @@ nav {
   text-align: center;
 }
 .sec-5-cont-2 p {
+  width: 240px;
   line-height: 1.6;
   font-weight: bold;
   padding-bottom: 80px;
@@ -296,6 +319,9 @@ nav {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
+}
+.sec-6-cont h1{
+  width: 300px;
 }
 .sec-6-cont {
   padding-top: 60px;
@@ -423,7 +449,6 @@ nav {
 .subscribe h2 {
   padding-top: 20px;
 }
-
 .email-input {
   padding-top: 50px;
 }
@@ -437,7 +462,6 @@ nav {
   width: 40px;
   height: 50px;
 }
-
 .footer-logo img {
   border-radius: 20px;
   height: 50px;
@@ -460,31 +484,6 @@ nav {
 nav .fa {
   visibility: hidden;
 }
-@media screen and (max-width: 1290px) {
-  .right-side img {
-    width: 60%;
-    padding-top: 40px;
-  }
-}
-@media screen and (max-width: 1120px) {
-  .right-side img {
-    visibility: hidden;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .menu {
-    padding-top: 20px;
-  }
-  .button-with-nav {
-    padding-top: 20px;
-  }
-}
-@media screen and (max-width: 956px) {
-  .menu a {
-    display: block;
-    float: left;
-  }
-}
 @media screen and (max-width: 770px) {
   header {
     background-color: #09204a;
@@ -494,88 +493,76 @@ nav .fa {
     padding-right: 40px;
     padding-left: 40px;
   }
-  .button-with-nav {
-    padding-right: 200px;
-    padding-bottom: 10px;
+  nav .fa {
+    visibility: visible;
+    color: #f6f9fc;
+    font-size: 20px;
   }
-  .left-side {
-    text-align: center;
+  .menu {
+    visibility: hidden;
   }
-  .left-side h1 {
+  .right-side img{
+    visibility: hidden;
+  }
+ .square-data-combine{
+   padding: 30px;
+ }
+ .sec-5-cont-1 h1{
+   font-size: 40px;
+ }
+ .sec5-col h1{
+   font-size: 40px;
+ }
+}
+@media (max-width: 480px) {
+  header{
+    height: 90vh;
+  }
+  .left-side{
+    width: 1000px;
+  }
+  .left-side h1{
     font-size: 30px;
   }
-  .service-top h1 {
-    font-size: 20px;
+  .service-top-content h1{
+       font-size: 30px;
   }
-  .circle-with-pic {
-    padding-left: 55px;
+  .rectiangle-for-image{
+    position: relative;
+    top: 2px;
+    left: 40px;
   }
-  .col-1,
-  .col-2,
-  .col-3 {
-    padding-top: 50px;
-  }
-  .b-business h1 {
-    padding-top: 20px;
-    font-size: 20px;
-  }
-  .content-1,
-  .content-2 {
-    flex-direction: column;
-  }
-  .content-1 img,
-  .content-2 img {
-    width: 100px;
-    padding-left: 20px;
-  }
-  .sec-b-btn {
+  .b-right-side{
     padding-left: 30px;
   }
-  .sec-4-cont-1-left {
-    padding-right: 150px;
-  }
-  .sec-4-cont-1-left p {
-    font-size: 15px;
-  }
-  .sec-4-cont-1-left h1 {
-    font-size: 20px;
-  }
-  .sec-4-cont-1-right p {
-    font-size: 15px;
-  }
-  .sec-5-cont-1 h1 {
-    font-size: 20px;
-  }
-  .sec-5-cont-1 p {
-    font-size: 15px;
-  }
-  .sec-5-cont-2 {
-    flex-direction: column;
-  }
-  .sec-5-cont-2 h1 {
-    font-size: 40px;
-  }
-  .sec-6-heading h1 {
+  .sec-4-cont-1-left h1{
+    width: 420px;
     font-size: 30px;
   }
-  .hero-text-sec-7 p {
+  .sec-4-cont-1-right p{
+    padding-top: 30px ;
+    width: 480px;
+    font-size: 20px;
+    padding-left: 12px;
+  }
+  .sec-5-cont-1 h1{
     font-size: 20px;
   }
-  .hero-text-sec-7 img {
-    width: 120px;
+  .sec-5-cont-1 p{
+    width: 400px;
   }
-  .hero-text-sec-7 button {
-    height: 50px;
-    width: 160px;
-  }
-  .footer-row {
+  .sec-5-cont-2 {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
-  .f-nav {
-    padding-top: 40px;
-  }
-  .se {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  .sec5-col h1{
+    font-size: 30px;
+  } 
+  .sec5-col p{
+    width: 380px;
+  } 
+  .sec-6-heading h1{
+    font-size: 20px;
   }
 }
