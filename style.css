@@ -477,7 +477,7 @@ nav {
 .social-icons .fa:hover {
   opacity: 0.7;
 }
-.copy-right {
+.copy-right p{
   text-align: center;
   padding-bottom: 20px;
 }
@@ -485,6 +485,9 @@ nav .fa {
   visibility: hidden;
 }
 @media screen and (max-width: 770px) {
+  html,body{
+    overflow-x: hidden;
+}
   header {
     background-color: #09204a;
     width: 100%;
@@ -515,6 +518,9 @@ nav .fa {
  }
 }
 @media (max-width: 480px) {
+  html,body{
+    overflow-x: hidden;
+}
   header{
     height: 90vh;
   }
@@ -529,20 +535,28 @@ nav .fa {
   }
   .rectiangle-for-image{
     position: relative;
-    top: 2px;
-    left: 40px;
+    top: -106px;
+    left: 64px;
+    width: 400px;
   }
+  .rectiangle-content {
+    float: right;
+    position: relative;
+    bottom: 35px;
+    right: 82px;
+    line-height: 1.5;
+}
   .b-right-side{
-    padding-left: 30px;
+    width: 400px;
   }
   .sec-4-cont-1-left h1{
-    width: 420px;
-    font-size: 30px;
+    width: 350px;
+    font-size: 20px;
   }
   .sec-4-cont-1-right p{
     padding-top: 30px ;
-    width: 480px;
-    font-size: 20px;
+    width: 380px;
+    font-size: 14px;
     padding-left: 12px;
   }
   .sec-5-cont-1 h1{
