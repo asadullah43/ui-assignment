@@ -565,4 +565,16 @@ nav .fa {
   .sec-6-heading h1{
     font-size: 20px;
   }
+  .col-2{
+    padding: 20px;
+  }
+  .sec-6-cont2{
+    padding: 20px;
+  }
+  .below-hero-img h1{
+  font-size: 12px;
+  }
+  .hero-text-sec-7 p{
+    font-size: 30px;
+  }
 }
