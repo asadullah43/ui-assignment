@@ -247,34 +247,35 @@ nav {
 .sec-4-cont-2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 50px;
-  padding-left: 150px;
-  padding-right: 150px;
+  justify-content: space-evenly;
+
+  padding: 30px;
+  
 }
+
 .square-1-ind {
   width: 200px;
   height: 200px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+    align-items: center;
   background-color: #0a2756;
   border: solid 2px #343a78;
 }
-.square-1-ind {
-  padding-top: 20px;
-  padding-left: 60px;
-}
+
 .square-1-ind img {
   width: 60px;
+  margin: 20px;
 }
 .square-1-ind a {
-  padding-top: 20px;
-  padding-right: 60px;
+  
   text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 20px;
+  padding: 20px;
 }
 .sec-4-link {
   text-align: center;
@@ -554,9 +555,6 @@ nav .fa {
   .right-side img {
     visibility: hidden;
   }
-  .square-data-combine {
-    padding: 30px;
-  }
   .sec-5-cont-1 h1 {
     font-size: 40px;
   }
@@ -596,8 +594,8 @@ nav .fa {
   .rectiangle-for-image {
     position: relative;
     top: -106px;
-    left: 64px;
-    width: 400px;
+    left: 58px;
+    width: 374px;
   }
   .rectiangle-content {
     float: right;
@@ -618,6 +616,20 @@ nav .fa {
     width: 380px;
     font-size: 14px;
     padding-left: 12px;
+  }
+  .sec-4-cont-2{
+    width: 100%;
+    padding: 0%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .square-1-ind br {
+    display: none;
+  }
+  .square-1-ind{
+    width: 100%;
+    margin-top: 40px;
   }
   .sec-5-cont-1 h1 {
     font-size: 20px;
@@ -678,14 +690,6 @@ nav .fa {
 .sec-4-cont-1-right p{
  width: 250px;
 }
-.sec-4-cont-2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 50px;
-  padding-left: 114px;
-  padding-right: 150px;
-}
 .sec-5-cont-1 h1{
  width: 220px;
 }
@@ -696,5 +700,4 @@ nav .fa {
   width: 300px;
   font-size: 20px;
 }
-
 }
