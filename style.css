@@ -26,15 +26,21 @@ nav {
   font-weight: bold;
   padding: 10px 20px;
 }
+.menu a:hover {
+  color: palevioletred;
+}
 .button-with-nav button {
   border-radius: 20px;
-  border-color: white;
+  border: 2px solid white;
   height: 40px;
   width: 140px;
   text-align: center;
   background-color: #09204a;
   color: white;
   font-weight: bold;
+}
+.button-with-nav button:hover {
+  background-color: #ff4492;
 }
 .container {
   display: flex;
@@ -57,12 +63,17 @@ nav {
 }
 .left-side button {
   border-radius: 40px;
+  border: 2px solid #09204a;
   height: 50px;
   width: 150px;
   text-align: center;
   background-color: #f75683;
   color: #f6f9fc;
   font-weight: bold;
+}
+.left-side button:hover,
+.sec-b-btn button:hover {
+  background-color: #ff67a6;
 }
 .right-side img {
   position: absolute;
@@ -132,6 +143,12 @@ nav {
 .circle img {
   padding: 20px;
 }
+.col-1:hover,
+.col-2:hover,
+.col-3:hover {
+  background-color: #ff67a6;
+  border-radius: 4px;
+}
 .section-grow-business {
   background-color: #f6f9fc;
 }
@@ -189,6 +206,7 @@ nav {
 }
 .sec-b-btn button {
   border-radius: 40px;
+  border: 2px solid white;
   height: 50px;
   width: 150px;
   text-align: center;
@@ -287,13 +305,17 @@ nav {
 }
 .sec-5-cont-1 button {
   border-radius: 50px;
-  border-color: #ff44a3;
+  border: 2px solid #ff44a3;
   height: 50px;
   width: 180px;
   text-align: center;
   background-color: white;
   color: #ff44a3;
   font-weight: bold;
+}
+.sec-5-cont-1 button:hover {
+  background-color: #ff44a3;
+  color: #f6f9fc;
 }
 .sec-5-cont-2 {
   padding-top: 60px;
@@ -401,13 +423,17 @@ nav {
 }
 .hero-text-sec-7 button {
   border-radius: 50px;
-  border-color: white;
+  border: 2px solid #f6f9fc;
   height: 60px;
   width: 190px;
   text-align: center;
   background-color: white;
   color: #ff44a3;
   font-weight: bold;
+}
+.hero-text-sec-7 button:hover {
+  background-color: #ff44a3;
+  color: #f6f9fc;
 }
 .footer-row {
   padding: 100px;
@@ -437,6 +463,9 @@ nav {
   text-decoration: none;
   color: gray;
 }
+.footer-nav a:hover {
+  color: #f75683;
+}
 .fotter-services {
   display: flex;
   flex-direction: column;
@@ -445,6 +474,9 @@ nav {
 .fotter-services a {
   text-decoration: none;
   color: gray;
+}
+.fotter-services a:hover {
+  color: #f75683;
 }
 .subscribe h2 {
   padding-top: 20px;
@@ -484,7 +516,18 @@ nav {
 nav .fa {
   visibility: hidden;
 }
-@media screen and (max-width: 772px) {
+@media screen and (max-width: 1024px) {
+  .menu {
+    padding-top: 20px;
+  }
+  .button-with-nav {
+    padding-top: 20px;
+  }
+  .right-side img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 780px) {
   html,
   body {
     overflow-x: hidden;
@@ -502,7 +545,7 @@ nav .fa {
     color: #f6f9fc;
     font-size: 20px;
   }
-  .menu {
+  .menu a{
     visibility: hidden;
   }
   .right-side img {
